@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>
+      ToDo app
+    </title>
+    <link rel='stylesheet' href='bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='stylesheets/style.css'>
+  </head>
+  <body>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6 offset-sm-3 ">
+                <h1>To-Do App</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class='container-fluid'>
+        <center><p style='color: green'><%= print%></p></center>
+      <div class='row'>
+        <div class="col-12 col-sm-5 offset-sm-1 row-content" style='padding-top: 20px; padding-left: 100px; background-color: darkseagreen '>
+          <center><h4 style='padding-top: 20px'>Register </h4></center>
+          <form method='POST' action='/register' class='has-validation'>
+            <div class="form-group row">
+                <label for="feedback" class="col-12 col-sm-3 col-form-label">First Name :</label>
+                  <div class="col-12 col-sm-5">
+                    <input type='text' class='form-control' name='fname' placeholder='Enter First Name' required>
+                  </div>
+              </div>
+              <div class="form-group row">
+                <label for="feedback" class="col-12 col-sm-3 col-form-label">Last Name :</label>
+                  <div class="col-12 col-sm-5">
+                    <input type='text' class='form-control' name='lname' placeholder='Enter Last Name' required>
+                  </div>
+              </div>
+              <div class="form-group row">
+                <label for="feedback" class="col-12 col-sm-3 col-form-label">email :</label>
+                  <div class="col-12 col-sm-5">
+                    <input type='email' class='form-control' name='username' placeholder='Enter email' required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="feedback" class="col-12 col-sm-3 col-form-label">Password :</label>
+                    <div class="col-12 col-sm-5">
+                      <input type='password' class='form-control' name='password' placeholder='Set password' required>
+                    </div>
+                </div>
+                    <div class="form-group row">
+              <div class=" col-sm-3 offset-sm-4">
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-sm-5 row-content" style='padding-top: 20px; padding-left: 50px; background-color: darkseagreen '>
+            <center><h4 style='padding-top: 20px'>Login </h4></center>
+            <form method='POST' action='/login' class='has-validation'>
+              <div class="form-group row">
+                <label for="feedback" class="col-12 col-sm-3 col-form-label">Username :</label>
+                  <div class="col-12 col-sm-5">
+                    <input type='email' class='form-control' name='username' placeholder='Enter Username' required>
+                  </div>
+              </div>
+              <div class="form-group row">
+                <label for="feedback" class="col-12 col-sm-3 col-form-label">Password :</label>
+                  <div class="col-12 col-sm-5">
+                    <input type='password' class='form-control' name='password' placeholder='Enter Password' required>
+                  </div>
+              </div>
+              <div class="form-group row">
+                <div class=" col-sm-3 offset-sm-4">
+                  <button type="submit" class="btn btn-success">Login</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+
+
+    <script src='bootstrap/dist/js/bootstrap.min.js'></script>
+  </body>
+</html>
